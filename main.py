@@ -67,3 +67,5 @@ test_data = df_test.values
 output = model.predict(test_data[:,1:])
 results = np.c_[test_data[:,0].astype(int), output.astype(int)]
 df_result = pd.DataFrame(results, columns = ['PassengerId', 'Survived'])
+
+print df_result
